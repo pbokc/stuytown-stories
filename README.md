@@ -2,4 +2,4 @@
 
 Oral histories from long-time Stuyvesant Town residents.
 
-Live at: https://pbokc.github.io/stuytown-stories/
+WIP - will be hosted at [stuytownstories.com](https://stuytownstories.com)
