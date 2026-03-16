@@ -5,48 +5,140 @@
 }
 
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.6;
-    color: #333;
-    max-width: 700px;
+    font-family: 'Cormorant', Georgia, serif;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #1b3d2f;
+    background-color: #e4eeda;
+    max-width: 640px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 4rem 1.5rem 3rem;
 }
 
+/* Header */
+
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 header h1 {
-    font-size: 2rem;
-    margin-bottom: 0.25rem;
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: #14332a;
 }
 
-header p {
-    color: #666;
-    font-style: italic;
+/* About */
+
+.about {
+    margin-bottom: 3.5rem;
+}
+
+/* Shared body text style — applies to intro paragraph and episode subtitles.
+   Edit font-size, color, and line-height here to change both at once. */
+.about p,
+.episode-detail {
+    font-size: 1.2rem;
+    color: #2a5443;
+    line-height: 1.9;
+}
+
+.about p {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+/* Episodes */
+
+.episodes {
+    margin-bottom: 3rem;
+}
+
+.episodes h2 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #14332a;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
 }
 
 .episode {
-    margin-bottom: 2rem;
-    padding: 1rem 0;
-    border-top: 1px solid #ddd;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(27, 61, 47, 0.15);
 }
 
-.episode h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
+.episode-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
+
+.episode-number {
+    font-family: 'Cormorant', Georgia, serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: rgba(27, 61, 47, 0.55);
+}
+
+.episode h3 {
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1b3d2f;
+    letter-spacing: -0.01em;
+}
+
+.episode-detail {
+    margin-top: 0.15rem;
+}
+
+/* Audio player */
 
 audio {
     width: 100%;
-    margin-top: 0.5rem;
+    height: 40px;
+    margin-top: 0.25rem;
+    border-radius: 8px;
+    opacity: 0.85;
 }
 
+audio::-webkit-media-controls-panel {
+    background-color: #d4e0cf;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    body {
+        padding: 2.5rem 1.2rem 2rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .episodes h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Footer */
+
 footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ddd;
-    color: #999;
-    font-size: 0.875rem;
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(27, 61, 47, 0.15);
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: rgba(27, 61, 47, 0.35);
+    letter-spacing: 0.03em;
 }

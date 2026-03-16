@@ -4,22 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stuytown Stories</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Cormorant:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Stuytown Stories</h1>
-        <p>Oral histories from Stuyvesant Town</p>
+        <h1>stuytown stories</h1>
     </header>
-    <main>
+
+    <section class="about">
+        <p>Stuyvesant Town has been home to generations of New Yorkers since 1947. Behind every window is a life lived, a story waiting to be told. This project collects oral histories from long-time residents&mdash;their memories, their routines, the small moments that made this place more than just an address.</p>
+    </section>
+
+    <section class="episodes">
+        <h2>interviews</h2>
+
+        <!--
+            To add a new episode, copy one <article class="episode"> block and update:
+              - episode-number: 02, 03, etc.
+              - h3: guest name or episode title
+              - episode-detail: short description
+              - audio src: path to the mp3 file in audio/
+        -->
+
         <article class="episode">
-            <h2>Episode 1</h2>
+            <div class="episode-header">
+                <span class="episode-number">1</span>
+                <div>
+                    <h3>coming soon</h3>
+                    <p class="episode-detail">First interview in progress</p>
+                </div>
+            </div>
             <audio controls preload="metadata">
-                <source src="audio/episode-01.wav" type="audio/wav">
+                <source src="audio/episode-01.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
         </article>
-    </main>
+
+    </section>
+
     <footer>
         <p>&copy; 2026 Stuytown Stories</p>
     </footer>
